@@ -5,8 +5,8 @@ import sys
 import ujson
 import network
 import requests
-ssid = 'power street'
-password = 'power123'
+ssid = 'PUT SSID HERE'
+password = 'PASSWORD'
 led0 = machine.Pin("LED", machine.Pin.OUT)
 led0.off()
 
@@ -132,7 +132,7 @@ led0.off()
 
 #authenticate to ubidots
 headers = {
-    "x-ubidots-apikey": "BBFF-0b38cffd5b5bbfc566a0543db81752dd450",
+    "x-ubidots-apikey": "PUT API KEY HERE",
     "Content-Type": "application/json"
 }
 tokenrawdata = ""
